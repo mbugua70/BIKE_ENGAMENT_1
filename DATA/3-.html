@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DATA-ENTRY</title>
+
+	<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/superpower.css?845638475865854">
+		
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="css/fontawesome.css">
+</head>
+<body>
+	<div class="overall_container">
+		
+	
+	<div class="home ">
+
+		 <div class="formy ">
+     
+          <input id="name" name="name" class="input  " type="text"  placeholder="Name" value="">
+          <br>
+          <input id="phone" name="phone" class="input  " type="tel"  placeholder="Phone Number" value="">
+            <br>
+            <select id="game" name="game" class="input"  placeholder="Points Scored" value="">
+            	<option value="VR golf">VR golf</option>
+            	<option value="Trick shot">Trick shot</option>
+            	<option value="360 photoboth">360 photoboth</option>
+            </select>
+            <br>
+            <input id="points" name="points" class="input  " type="number"  placeholder="Points Scored" value="">
+            <br>
+            <input id="merchandis" name="merchandis" class="input  " type="text"  placeholder="Merchandise" value="">
+            <br>
+            <button id="start_hunt" class="butty">Submit</button>
+         
+          </div>
+		
+	</div>
+
+	<div class="game_content hidden" id="game_content">
+
+		
+
+
+		
+	</div>
+
+
+
+
+
+
+
+
+
+<div class="instructions hidden">
+	<div class="instructions_holder">
+    <h1 class="h1">How To Play</h1>
+    <ol class="ol">
+
+
+      <li class="lili">Use the Chrome browser</li>
+<li class="lili">We shall not be responsible for any device technical issues or any of the following device issues during the game: device hanging, device failure to submit results, browser issues or battery power exhaustion</li>
+
+<li class="lili">Do NOT exit, refresh the page, go back or switch tabs on the browser page at any point in time whilst undertaking the game</li>
+
+<li class="lili">Upon successful submission and completion, you will see your type of super power</li>
+
+<li class="lili">To start, you are required to enter your name and department address. </li>
+
+
+     </ol>
+<button id="start_game" class="butty" >Start</button>
+    <!--<a href="#" class="float" onclick="takeMeTo('.instructions','.game_content')">
+<i class="fa fa-arrow-right fa-2x my-float"></i>
+</a>-->
+</div>
+  </div>
+
+	 <div class="terms hidden">
+	 	<div class="terms_holder">
+    <h1 class="h1">Terms And Conditions</h1>
+    <ol>
+     
+      <li class="lili">Use the Chrome browser</li>
+<li class="lili">We shall not be responsible for any device technical issues or any of the following device issues during the game: device hanging, device failure to submit results, browser issues or battery power exhaustion</li>
+
+<li class="lili">Do NOT exit, refresh the page, go back or switch tabs on the browser page at any point in time whilst undertaking the game</li>
+
+<li class="lili">Upon successful submission and completion, you will see your type of super power</li>
+
+<li class="lili">To start, you are required to enter your name and department address. </li>
+
+     </ol>
+    <a href="#" class="float" onclick="takeMeTo('.terms','.home')">
+<i class="fa fa-close fa-2x my-float"></i>
+</a>
+</div>
+  </div>
+	
+	<div id="score_display" class="score_display hidden">
+
+
+	</div>
+
+
+	<div id="DC" class="DC hidden ">
+		<div class="inner_top flexit">
+				<div class="super_final_holder">
+				<div class="tr_div flex_right">
+						<h1 class="hx">YOU ARE TEAM</h1>
+				</div>
+				<div class="tr_div flex_left">
+				<img class="company_logo" src="images/DC.jpg">
+			</div>
+			<div class="full_div flexit">
+				<img src="images/e_shot.jpeg" class="eshot_band">
+			</div>
+			<div class="full_div flexit">
+				<h3 class="h3x"><a href="https://safaricom-co-ke.zoom.us/j/85328798153?pwd=ekFscHlQbDkvMVV2OUVlSzAyLzI0UT09">Click Here to Join the Party</a></h3>
+			</div>
+				
+			  
+			</div>
+		</div>
+		
+
+
+	</div>
+
+
+	<div id="MARVEL" class="MARVEL  hidden">
+
+
+			<div class="inner_top flexit">
+				<div class="super_final_holder">
+				<div class="tr_div flex_right">
+						<h1 class="hx">YOU ARE TEAM</h1>
+				</div>
+				<div class="tr_div flex_left">
+				<img class="company_logo" src="images/MARVEL.jpg">
+			</div>
+			<div class="full_div flexit">
+				<img src="images/e_shot.jpeg" class="eshot_band">
+			</div>
+			<div class="full_div flexit">
+				<h3 class="h3x"><a href="https://safaricom-co-ke.zoom.us/j/85328798153?pwd=ekFscHlQbDkvMVV2OUVlSzAyLzI0UT09">Click Here to Join the Party</a></h3>
+			</div>
+				
+			  
+			</div>
+		</div>
+
+	
+		
+	</div>
+
+
+		
+
+
+	</div>
+
+
+
+<div class="xx" id="DISP"></div>
+
+<audio  id="check" src="audio/check.mp3" preload ></audio>
+<audio  id="audio_gems" src="audio/audio_gems.mp3" preload ></audio>
+<audio  id="points" src="audio/points.mp3" preload ></audio> 
+<audio  id="nopoints" src="audio/nopoints.mp3" preload ></audio> 
+<audio  id="sand" src="audio/sand.mp3" preload ></audio>
+<audio  id="uncheck" src="audio/uncheck.mp3" preload ></audio>
+<audio  id="already" src="audio/already.mp3" preload ></audio>
+
+  <script src='js/jquery.js'></script>
+  <script src="js/sweet.js"></script>
+  <script src="js/superpower.js?845638475865854"></script>
+
+</body>
+</html>

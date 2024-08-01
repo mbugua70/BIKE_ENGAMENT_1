@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DATA-ENTRY</title>
+
+	<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/superpower.css?845638475865854">
+		
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="css/fontawesome.css">
+</head>
+<body>
+	<div class="overall_container">
+		
+	
+	<div class="home  ">
+
+		 <div class="formy ">
+		
+          <input id="ba_name" name="ba_name" class="input  " type="text"  placeholder="Your name" value="">
+          <br>
+          <input id="ba_phone" name="ba_phone" class="input  " type="tel"  placeholder="Your Phone Number" value="">
+            
+            <br>
+            <button id="save_details" onclick="registerBA()" class="butty">Save BA Details</button>
+         
+          </div>
+		
+	</div>
+	
+	<div id="score_display" class="score_display hidden">
+
+<div class="gift">
+	
+</div>
+	</div>
+
+
+
+
+
+		
+
+
+	</div>
+
+
+
+<div class="xx" id="DISP"></div>
+
+
+
+  <script src='js/jquery.js'></script>
+  <script src="js/sweet.js"></script>
+  <script src="js/super.js?845638475865854"></script>
+
+   <script type="text/javascript">
+
+          name= flashStore.getItem("name");
+          phone=flashStore.getItem("phone");       
+
+          $("#ba_name").val(name);
+          $("#ba_phone").val(phone);
+    
+       function registerBA () {
+            var formStatus=validateForm3();
+            if (formStatus) 
+            {
+       
+        name = $('#ba_name').val();
+        phone = $('#ba_phone').val();
+       
+          flashStore.setItem("name", name);
+          flashStore.setItem("phone", phone);         
+        
+
+swal("Registration Successfull","You have been registered successfully","success")
+        setTimeout(function(){
+          location.href="index.html";
+        },2000)
+
+
+
+
+    }//vorm validator
+
+           
+        
+        
+    }
+
+
+   function validateForm3 ()
+    {
+        var shouldProceed=true;
+        name = $('#ba_name').val();
+        phone = $('#ba_phone').val();
+        
+        
+
+         if(!name)
+        {
+             swal("Your name is required","","error");
+             $('#name').focus();
+             shouldProceed=false;
+        }
+        else if(!phone)
+        {
+             swal("Your Phone Number is required","","error");
+             $('#phone').focus();
+             shouldProceed=false;
+        }
+        
+      
+    
+    return shouldProceed;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/video.css" rel="stylesheet" />
+   <link href="css/style2.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+  <title>BIKE X VIDEO</title>
+</head>
+
+<body>
+
+
+ 
+
+      <div class="content_end hidden">
+
+        <div class="results_holder">
+            <div class="final_score">
+        <div class="txt">Score</div>
+        <div class="scr"  id="final_score" >100</div>
+      </div>
+            <div class="final_time" >
+        <div class="txt">Time</div>
+        <div class="scr" id="final_time" >100</div>
+      </div>
+        </div>
+    <div class="rama">Thank you for participating</div>
+        
+    </div>
+
+
+    <div class="full_width">
+      <div class="left_split">
+
+
+        <div class="game_content ">
+
+        <div class="video_holder ">
+  <video muted="true"
+    id="my-video"
+    class="video-js positioner"
+    preload="auto"
+    poster="screen3.png"
+    data-setup="{}"
+  >
+    <source src="video/vid.mp4" type="video/mp4" />
+    
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  
+
+  <div id="question_holder" class="question_holder hidden">
+    
+  </div> 
+
+  </div>
+
+  <div class="navigation">
+
+    <div class="start">
+      <button id="play_pause" data-value="paused" class="pause_play play"></button>
+    </div>
+
+
+    <div id="progress_holder" class="progress_holder">
+      <div class="black_progress">
+        <div id="green_progress" class="green_progress"></div>
+      </div>
+    </div>
+
+    
+    <div class="main-top-holder">
+      <div class="top_display">
+      <div class="score_holder td">
+        <div class="top_label flexit">
+          Distance
+        </div>
+        <div class="top_number flexit score " id="score">
+          0
+        </div>
+      </div>
+
+       <div class="score_holder sd">
+        <div class="top_label flexit">
+          Time
+        </div>
+        <div class="top_number flexit time" id="counter_x">
+          0
+        </div>
+      </div>
+    </div>
+    </div>
+    
+
+    
+
+  </div>
+    </div>
+        
+      </div>
+
+       <div class="right_split">
+
+        <div class="game_content ">
+
+        <div class="video_holder ">
+  <video muted="true"
+    id="my-video-2"
+    class="video-js positioner"
+    preload="auto"
+    poster="screen3.png"
+    data-setup="{}"
+  >
+    <source src="video/vid.mp4" type="video/mp4" />
+    
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  
+
+
+  </div>
+
+  <div class="navigation">
+
+    <div class="start">
+      <button id="play_pause" data-value="paused" class="pause_play play"></button>
+    </div>
+
+
+    <div id="progress_holder" class="progress_holder">
+      <div class="black_progress">
+        <div id="green_progress" class="green_progress"></div>
+      </div>
+    </div>
+
+    
+    <div class="main-top-holder">
+      <div class="top_display">
+      <div class="score_holder td">
+        <div class="top_label flexit">
+          Distance
+        </div>
+        <div class="top_number flexit score " id="score-2">
+          0
+        </div>
+      </div>
+
+       <div class="score_holder sd">
+        <div class="top_label flexit">
+          Time
+        </div>
+        <div class="top_number flexit time" id="time-2">
+          0
+        </div>
+      </div>
+    </div>
+    </div>
+    
+
+    
+
+  </div>
+    </div>
+        
+      </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+  <!--<div class="display_score">0</div>-->
+   <audio  id="uncheck" src="audio/uncheck.mp3" preload ></audio>
+    <audio  id="wrong" src="audio/wrong.mp3" preload ></audio>
+    <audio  id="check" src="audio/check.mp3" preload ></audio>
+    <audio  id="nopoints" src="audio/nopoints.mp3" preload ></audio>
+    <audio  id="correct" src="audio/correct.mp3" preload ></audio>
+   
+<script src="js/jquery.js"></script>
+<script src="js/sweet.js"></script>
+<script src="js/video.js"></script>
+<script src="js/blue_bike.js"></script>
+<script type="text/javascript">
+  /*$('body').append('<div id="loadingDiv" class="loader_holder"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>');
+$(window).on('load', function(){
+  setTimeout(removeLoader, 1500); //wait for page load PLUS two seconds.
+});
+function removeLoader(){
+    $( "#loadingDiv" ).fadeOut(500, function() {
+      // fadeOut complete. Remove the loading div
+      $( "#loadingDiv" ).remove(); //makes page more lightweight 
+  });  
+}*/
+</script>
+</body>
+
+</html>
